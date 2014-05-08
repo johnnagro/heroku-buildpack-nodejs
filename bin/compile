@@ -51,7 +51,7 @@ mkdir -p $build_dir/vendor
 mv $build_dir/node-v$node_version-linux-x64 $build_dir/vendor/node
 chmod +x $build_dir/vendor/node/bin/*
 PATH=$build_dir/vendor/bundle/ruby/1.9.1/bin:$build_dir/vendor/bundle/bin:$build_dir/vendor/node/bin:$build_dir/vendor/bundle/bin:$PATH
-export GEM_PATH=$build_dir/vendor/bundle/ruby/1.9.1
+#export GEM_PATH=$build_dir/vendor/bundle/ruby/1.9.1
 export GEM_HOME=$build_dir/vendor/bundle/ruby/1.9.1
 
 # Run subsequent node/npm commands from the build path
